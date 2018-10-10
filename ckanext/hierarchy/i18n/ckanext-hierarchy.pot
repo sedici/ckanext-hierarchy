@@ -1,0 +1,83 @@
+# Translations template for ckanext-hierarchy.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the ckanext-hierarchy
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-hierarchy 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-10-10 13:28-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ckanext/hierarchy/templates/organization/read.html:12
+msgid "Relevance"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read.html:13
+msgid "Name Ascending"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read.html:14
+msgid "Name Descending"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read.html:15
+msgid "Last Modified"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read.html:16
+msgid "Popular"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read.html:18
+msgid "Search datasets..."
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read_base.html:13
+#: ckanext/hierarchy/templates/package/base.html:8
+msgid "Organizations"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read_base.html:23
+#: ckanext/hierarchy/templates/package/base.html:15
+#: ckanext/hierarchy/templates/package/base.html:19
+msgid "Datasets"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read_base.html:24
+msgid "Activity Stream"
+msgstr ""
+
+#: ckanext/hierarchy/templates/organization/read_base.html:25
+msgid "About"
+msgstr ""
+
+#: ckanext/hierarchy/templates/package/base.html:20
+msgid "Create Dataset"
+msgstr ""
+
+#: ckanext/hierarchy/templates/scheming/form_snippets/org_hierarchy.html:2
+msgid "Parent"
+msgstr ""
+
+#: ckanext/hierarchy/templates/scheming/form_snippets/org_hierarchy.html:6
+msgid "None - top level"
+msgstr ""
+
+#: ckanext/hierarchy/templates/snippets/organization.html:11
+msgid "Deleted"
+msgstr ""
+
+#: ckanext/hierarchy/templates/snippets/search_form.html:7
+msgid "Include Sub-Organizations"
+msgstr ""
+

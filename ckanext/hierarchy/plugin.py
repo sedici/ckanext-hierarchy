@@ -2,6 +2,7 @@ import ckan.plugins as p
 from ckanext.hierarchy.logic import action
 from ckanext.hierarchy import helpers
 from ckan.lib.plugins import DefaultOrganizationForm
+from ckan.lib.plugins import DefaultTranslation
 from ckan.lib.plugins import DefaultGroupForm
 import ckan.logic.schema as s
 from ckan.common import c, request
@@ -34,12 +35,13 @@ def custom_convert_from_extras(key, data, errors, context):
     for remove_key in to_remove:
         del data[remove_key]
 
-class HierarchyDisplay(p.SingletonPlugin):
+class HierarchyDisplay(p.SingletonPlugin, DefaultTranslation):
 
     p.implements(p.IConfigurer, inherit=True)
     p.implements(p.IActions, inherit=True)
     p.implements(p.ITemplateHelpers, inherit=True)
     p.implements(p.IPackageController, inherit=True)
+    p.implements(p.ITranslation, inherit=True)
 
     # IConfigurer
 
@@ -129,9 +131,10 @@ class HierarchyDisplay(p.SingletonPlugin):
         return search_params
 
 
-class HierarchyForm(p.SingletonPlugin, DefaultOrganizationForm):
+class HierarchyForm(p.SingletonPlugin, DefaultOrganizationForm, DefaultTranslation):
 
     p.implements(p.IGroupForm, inherit=True)
+    p.implements(p.ITranslation, inherit=True)
 
 
     # IGroupForm
