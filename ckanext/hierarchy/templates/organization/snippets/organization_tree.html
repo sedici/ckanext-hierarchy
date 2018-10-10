@@ -20,17 +20,17 @@ Example:
 
 <ul class="hierarchy-tree-top">
   {% for node in top_nodes recursive %}
-      {% set longname = h.group_tree_get_longname(node.name) %} 
-      {% set display_text = node.title %} 
+      {% set longname = h.group_tree_get_longname(node.name) %}
+      {% set display_text = node.title %}
       {% if use_longnames and longname%}
           {% set display_text = longname + " (" + display_text + ")" %}
-      {% endif %} 
+      {% endif %}
       {% if node.highlighted %}
           <li class="highlighted" id="node_{{ node.name }}">
       {% else %}
           <li id="node_{{ node.name }}">
       {% endif %}
-      {% link_for display_text, controller='organization', action='read', id=node.name %}
+      {% link_for display_text, controller='organization', action='read', id=node.name, include_children=True %}
       {% if node.children %}
         <ul class="hierarchy-tree"> {{ loop(node.children) }} </ul>
       {% endif %}
