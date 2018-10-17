@@ -109,7 +109,7 @@ class HierarchyDisplay(p.SingletonPlugin, DefaultTranslation):
                     continue
                 # skip include children andset option value
                 if (field == 'include_children'):
-                    if (value.upper() != "FALSE"):
+                    if (value.upper() != '"FALSE"'):
                         c.include_children_selected = True
                     #Remove "include_children" parameter if present in "q" field at search_param variable, to avoid erronous condition
                     # when the current organization has no children
